@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        tools:context="com.example.shesh.calcself.MainActivity">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fafafa"
+            >
+
+            <TableRow
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/inputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:background="#ffffff"
+                    android:padding="30dip"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/outputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:background="#ffffff"
+                    android:padding="30dip"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center"
+                android:background="#fafafa"
+                android:gravity="center"
+                android:paddingHorizontal="1dip"
+                android:paddingVertical="1dip">
+
+                <Button
+                    android:id="@+id/buttonSin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="Sin"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="sin"
+                    android:textAllCaps="false"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonCos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="Cos"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="cos"
+                    android:textAllCaps="false"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonTan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="Tan"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="tan"
+                    android:textAllCaps="false"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="Log"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="log"
+                    android:textAllCaps="false"
+                    android:textSize="26sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center"
+                android:background="#fafafa"
+                android:gravity="center"
+                android:paddingHorizontal="1dip"
+                android:paddingVertical="1dip">
+
+                <Button
+                    android:id="@+id/buttonClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="Clear"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="C"
+                    android:textColor="#ff9800"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="Back"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="B"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonRoot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="Root"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="R"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonCubeRoot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="CubeRoot"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="Q"
+                    android:textSize="26sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center"
+                android:background="#fafafa"
+                android:gravity="center"
+                android:paddingHorizontal="1dip"
+                android:paddingVertical="1dip">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="actionDigit"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="1"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="actionDigit"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="2"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="actionDigit"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="3"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="Add"
+
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="+"
+                    android:textSize="26sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center"
+                android:background="#fafafa"
+                android:gravity="center"
+                android:paddingHorizontal="1dip"
+                android:paddingVertical="1dip">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="actionDigit"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="4"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="actionDigit"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="5"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="actionDigit"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="6"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="Sub"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="-"
+                    android:textSize="26sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center"
+                android:background="#fafafa"
+                android:gravity="center"
+                android:paddingHorizontal="1dip"
+                android:paddingVertical="1dip">
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="actionDigit"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="7"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="actionDigit"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="8"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="actionDigit"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="9"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonMul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="Mul"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="*"
+                    android:textSize="26sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center"
+                android:background="#fafafa"
+                android:gravity="center"
+                android:paddingHorizontal="1dip"
+                android:paddingVertical="1dip">
+
+                <Button
+                    android:id="@+id/buttonDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="actionDot"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="."
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/button0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="actionDigit"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="0"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonEqual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ff9800"
+                    android:onClick="Equal"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="="
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonDiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa"
+                    android:onClick="Div"
+                    android:paddingHorizontal="1dip"
+                    android:paddingVertical="1dip"
+                    android:text="/"
+                    android:textSize="26sp" />
+            </TableRow>
+        </TableLayout>
+    </TableLayout>
+</layout>
